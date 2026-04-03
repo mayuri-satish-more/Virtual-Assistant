@@ -2,7 +2,11 @@ import axios from "axios";
 
 export const geminiResponse = async (command, assistantName, userName) => {
   try {
-    const apiUrl = process.env.GEMINI_API_URL;
+    // const apiUrl = process.env.GEMINI_API_URL;
+
+    console.log("API Key:", process.env.GEMINI_API_KEY)
+console.log("API URL:", process.env.GEMINI_API_URL)
+    process.env.GEMINI_API_URL,
 
     const prompt = `You are a virtual assistant named ${assistantName} created by ${userName}.
 You are not Google. You will now behave like a voice-enabled assistant.
@@ -70,6 +74,7 @@ puchata hai jiska answer tumhe pta hai usko bhi general ki category mai rakho ba
         },
       },
     );
+    
 
     return result.data.candidates[0].content.parts[0].text;
   } catch (error) {
