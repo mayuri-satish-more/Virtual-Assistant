@@ -43,8 +43,8 @@
 
 import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from "react-router-dom";
-import SignUp from './pages/signUp';
-import SignIn from './pages/signIn';
+import SignUp from './pages/signUp.jsx';
+import SignIn from './pages/signIn.jsx';
 import Customize from './pages/Customize';
 import Home from './pages/Home';
 import Customize2 from './pages/Customize2.jsx';
