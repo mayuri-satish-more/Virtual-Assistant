@@ -1,7 +1,7 @@
 // import React from 'react';
 // import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import SignUp from './pages/signUp';
-// import SignIn from './pages/signIn';
+// import SignUp from './pages/signUp.jsx';
+// import SignIn from './pages/signIn.jsx';
 // import Customize from './pages/Customize';
 // import { useContext } from 'react';
 // import { UserDataContext } from './context/UserContext.jsx';
